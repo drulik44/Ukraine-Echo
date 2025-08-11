@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A3A80BE72E4A247C001B10DA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3A80BE62E4A247C001B10DA /* SnapKit */; };
 		A3A80BEC2E4A5446001B10DA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A3A80BEB2E4A5446001B10DA /* Alamofire */; };
-		A3A80BEE2E4A5446001B10DA /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A3A80BED2E4A5446001B10DA /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A80BE72E4A247C001B10DA /* SnapKit in Frameworks */,
-				A3A80BEE2E4A5446001B10DA /* AlamofireDynamic in Frameworks */,
 				A3A80BEC2E4A5446001B10DA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +87,6 @@
 			packageProductDependencies = (
 				A3A80BE62E4A247C001B10DA /* SnapKit */,
 				A3A80BEB2E4A5446001B10DA /* Alamofire */,
-				A3A80BED2E4A5446001B10DA /* AlamofireDynamic */,
 			);
 			productName = "Ukraine Echo";
 			productReference = A373DAC22E2E777900EF2ECD /* Ukraine Echo.app */;
@@ -383,11 +380,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3A80BEA2E4A5446001B10DA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		A3A80BED2E4A5446001B10DA /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A3A80BEA2E4A5446001B10DA /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
