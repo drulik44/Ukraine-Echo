@@ -14,4 +14,6 @@ enum AppColors {
     static let accentBlue = UIColor(hex: 0x4464E8)
     static let gray = UIColor(hex: 0x333333)
     static let blue = UIColor(hex: 0xD6EDFF)
+    static let descriptionTextColor = UIColor(hex: 0x1C1919)
+    static let onboardingButtonTextColor: UIColor = UIColor(hex: 0x2C2E94)
 }
