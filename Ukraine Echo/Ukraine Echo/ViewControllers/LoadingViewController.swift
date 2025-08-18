@@ -29,7 +29,6 @@ class LoadingViewController: UIViewController {
         setupConstraints()
         bindViewModel()
         
-        // Запускаем исчезновение гербов через 2 секунды
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.animateEmblems()
         }

@@ -21,7 +21,7 @@ final class OnboardingViewController: UIPageViewController, UIPageViewController
         self.viewModel = viewModel
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         self.delegate = self
-        self.dataSource = nil // чтобы свайп был отключен, как в твоём коде
+        self.dataSource = nil
         setupBindings()
     }
 
@@ -37,7 +37,6 @@ final class OnboardingViewController: UIPageViewController, UIPageViewController
             self?.goToSecondPage()
         }
         viewModel.onFinish = { [weak self] in
-            // Например, закрыть onboarding
             self?.dismiss(animated: true)
         }
     }

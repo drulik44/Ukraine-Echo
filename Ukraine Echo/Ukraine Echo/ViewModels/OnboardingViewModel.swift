@@ -19,12 +19,11 @@ final class OnboardingViewModel {
     let secondScreenTitle = "War is never the \nanswer!"
     let secondScreenDescription = "This is a chronicle of pain, strength, and truth.\nCities that endured.\nLives that changed.\nStories that must be remembered."
 
-    // MARK: - Callbacks (биндинги)
+    // MARK: - Callbacks 
 
     var onNextScreenRequested: (() -> Void)?
     var onFinish: (() -> Void)?
 
-    // MARK: - Логика
 
     func userTappedNextOnFirstScreen() {
         onNextScreenRequested?()

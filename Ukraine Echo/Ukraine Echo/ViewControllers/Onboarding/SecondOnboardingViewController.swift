@@ -132,7 +132,6 @@ class SecondOnboardingViewController: UIViewController {
         titleLabel.text = viewModel.secondScreenTitle
         descriptionLabel.text = viewModel.secondScreenDescription
            
-           // Назначаем действия кнопкам
            nextButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
         
        }
