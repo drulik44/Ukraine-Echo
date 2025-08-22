@@ -197,7 +197,6 @@ class FirstOnboardingViewController: UIViewController {
            titleLabel3.text = viewModel.firstScreenTitle3
            descriptionLabel.text = viewModel.firstScreenDescription
 
-           // Назначаем действия кнопкам
            nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
         helperButton.addTarget(self, action: #selector(openHelper), for: .touchUpInside)
         infoButton.addTarget(self, action: #selector(openInfo), for: .touchUpInside)
