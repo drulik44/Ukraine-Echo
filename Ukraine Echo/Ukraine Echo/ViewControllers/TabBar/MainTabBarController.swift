@@ -39,21 +39,17 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 1. Устанавливаем контроллеры из ViewModel
         self.viewControllers = viewModel.tabs.map { $0.viewController }
         tabBar.isHidden = true
         
-        // 2. Создаем кастомные кнопки
         setupButtons()
         view.addSubview(customBar)
         
-        // 3. Подписка на изменение selectedIndex
         viewModel.onTabSelected = { [weak self] index in
             self?.selectedIndex = index
             self?.updateButtonColors(selectedIndex: index)
         }
         
-        // 4. Выбираем первую вкладку
         viewModel.selectTab(index: 0)
     }
     
